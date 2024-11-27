@@ -1,0 +1,15 @@
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\obj\Debug\WpfDatabidingSample.csproj.AssemblyReference.cache
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\obj\Debug\App.g.cs
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\obj\Debug\WpfDatabidingSample_MarkupCompile.cache
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\bin\Debug\WpfDatabidingSample.exe.config
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\bin\Debug\WpfDatabidingSample.exe
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\bin\Debug\WpfDatabidingSample.pdb
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\obj\Debug\MainWindow.g.cs
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\obj\Debug\WpfDatabidingSample_MarkupCompile.lref
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\obj\Debug\MainWindow.baml
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\obj\Debug\WpfDatabidingSample.g.resources
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\obj\Debug\WpfDatabidingSample.Properties.Resources.resources
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\obj\Debug\WpfDatabidingSample.csproj.GenerateResource.cache
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\obj\Debug\WpfDatabidingSample.csproj.CoreCompileInputs.cache
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\obj\Debug\WpfDatabidingSample.exe
+D:\ABDULLAH\WpfDatabidingSample\WpfDatabidingSample\obj\Debug\WpfDatabidingSample.pdb

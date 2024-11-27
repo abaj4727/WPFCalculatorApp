@@ -1,0 +1,65 @@
+﻿<Window x:Class="WpfDatabidingSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDatabidingSample"
+        mc:Ignorable="d"
+        Title=" " Height="500" Width="350" WindowStyle="None" >
+
+    <Grid Background="#403e3e">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        
+        <!--TextScreen -->
+        <TextBox Name="txtInput" Grid.Row="1" Background="Transparent" Foreground="White" FontSize="60" FontFamily="Roborto" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" />
+        <!--END TextScreen -->
+        
+        <!--Numbers and Operations-->
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!-- Line 1-->
+            <Button Name="btnAc" Click="Clear_Click" Content="AC" Grid.Column="0" Grid.Row="0" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a"  BorderThickness="1,0,1,0" BorderBrush="Transparent" Foreground="White" />
+            <Button Name="btnadv"  Content="+/-" Grid.Column="1" Grid.Row="0" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a"  BorderThickness="0,0,1,0" Foreground="White" BorderBrush="Transparent"/>
+            <Button Name="btnPercentage"  Content="%" Grid.Column="2" Grid.Row="0" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a" BorderThickness="0,0,1,0" BorderBrush="Transparent" Foreground="White"/>
+            <Button Name="btnDivide"  Click="Operator_Click" Content="÷" Grid.Column="3" Grid.Row="0" FontFamily="Helvetica" FontSize="40" Background="#FF9500" Foreground="White"  BorderThickness="0,0,1,0" BorderBrush="Transparent"/>
+            <!-- Line 2-->
+            <Button Name="btnSeven" Click="Number_Click" Content="7" Grid.Column="0" Grid.Row="1" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a"  BorderThickness="1,1,1,0" BorderBrush="Transparent" Foreground="White" />
+            <Button Name="btnEight" Click="Number_Click" Content="8" Grid.Column="1" Grid.Row="1" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a"  BorderThickness="0,1,1,0" Foreground="White" BorderBrush="Transparent"/>
+            <Button Name="btnNine" Click="Number_Click"  Content="9" Grid.Column="2" Grid.Row="1" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a" BorderThickness="0,1,1,0" BorderBrush="Transparent" Foreground="White"/>
+            <Button Name="btnMultiply" Click="Operator_Click" Content="x" Grid.Column="3" Grid.Row="1" FontFamily="Helvetica" FontSize="40" Background="#FF9500" Foreground="White"  BorderThickness="0,1,1,0" BorderBrush="Transparent"/>
+            <!-- Line 3-->
+            <Button Name="btnFour" Click="Number_Click" Content="4" Grid.Column="0" Grid.Row="2" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a"  BorderThickness="1,1,1,0" BorderBrush="Transparent" Foreground="White" />
+            <Button Name="btnFive" Click="Number_Click" Content="5" Grid.Column="1" Grid.Row="2" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a"  BorderThickness="0,1,1,0" Foreground="White" BorderBrush="Transparent"/>
+            <Button Name="btnSix" Click="Number_Click" Content="6" Grid.Column="2" Grid.Row="2" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a" BorderThickness="0,1,1,0" BorderBrush="Transparent" Foreground="White"/>
+            <Button Name="btnMinus" Click="Operator_Click" Content="-" Grid.Column="3" Grid.Row="2" FontFamily="Helvetica" FontSize="40" Background="#FF9500" Foreground="White"  BorderThickness="0,1,1,0" BorderBrush="Transparent"/>
+            <!-- Line 4-->
+            <Button Name="btnOne" Click="Number_Click" Content="1" Grid.Column="0" Grid.Row="3" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a"  BorderThickness="1,1,1,0" BorderBrush="Transparent" Foreground="White" />
+            <Button Name="btnTwo" Click="Number_Click" Content="2" Grid.Column="1" Grid.Row="3" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a"  BorderThickness="0,1,1,0" Foreground="White" BorderBrush="Transparent"/>
+            <Button Name="btnThree" Click="Number_Click" Content="3" Grid.Column="2" Grid.Row="3" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a" BorderThickness="0,1,1,0" BorderBrush="Transparent" Foreground="White"/>
+            <Button Name="btnPlus"  Click="Operator_Click" Content="+" Grid.Column="3" Grid.Row="3" FontFamily="Helvetica" FontSize="40" Background="#FF9500" Foreground="White"  BorderThickness="0,1,1,0" BorderBrush="Transparent"/>
+            <!-- Line 5-->
+            <Button Name="btnZero" Click="Number_Click" Content="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a"  BorderThickness="1,1,1,0" BorderBrush="Transparent" Foreground="White" />
+            <Button Name="btnDecimal" Click="Number_Click" Content="." Grid.Column="2" Grid.Row="4" FontFamily="Helvetica" FontSize="30" Background="#5c5a5a" BorderThickness="0,1,1,0" BorderBrush="Transparent" Foreground="White"/>
+            <Button Name="btnEqual"  Click="Equals_Click" Content="=" Grid.Column="3" Grid.Row="4" FontFamily="Helvetica" FontSize="40" Background="#FF9500" Foreground="White"  BorderThickness="0,1,1,0" BorderBrush="Transparent"/>
+        </Grid>
+        <!--END Numbers and Operations-->
+    </Grid>
+</Window>
